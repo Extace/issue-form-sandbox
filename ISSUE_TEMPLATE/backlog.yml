@@ -1,0 +1,11 @@
+name: Test Form
+description: Minimal issue form to confirm recognition
+title: "[Test] <short task title>"
+labels: ["test"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      placeholder: "Describe the issue here"
+      required: true

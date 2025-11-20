@@ -1,11 +1,31 @@
-name: Test Form
-description: Minimal issue form to confirm recognition
-title: "[Test] <short task title>"
-labels: ["test"]
+name: Backlog item
+description: Create a standardized task for Operations Hub
+title: "[Sprint X] <short task title>"
+labels: ["backlog"]
 body:
+  - type: input
+    id: sprint
+    attributes:
+      label: Sprint
+      placeholder: "Sprint 1"
+      required: true
+  - type: dropdown
+    id: module
+    attributes:
+      label: Module
+      options:
+        - ERP
+        - CRM
+        - CMS
+        - Infra
   - type: textarea
     id: description
     attributes:
       label: Description
-      placeholder: "Describe the issue here"
+      placeholder: "What needs to be done, acceptance criteria, and definition of done."
       required: true
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies
+      placeholder: "Depends on: #123, #124"
